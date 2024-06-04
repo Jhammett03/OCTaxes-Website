@@ -293,26 +293,26 @@ a.button, a.navbar__links {
 
 .background {
     position: absolute;
-    height: 100%;
-    width : 100%;
+    
     object-fit: cover;
     z-index: -1;
-    transform: translateZ(-10px)  scale(4);
+    transform: translateZ(-10px)  scale(5);
     overflow: hidden;
 }
 
 .main__container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-self: center;
-    margin: 0 auto;
+    /* justify-self: baseline; */
+    margin: auto auto;
     height: 80vh;
     width: 100vh;
     position: relative;
     object-fit: cover;
     background-size: 1920px;
-    width: 1920px;
+    width: fit-content;
     max-width: 1920px;
     padding: 0 50px;
     transform-style: preserve-3d;
@@ -321,7 +321,7 @@ a.button, a.navbar__links {
 
 .main__content {
     margin-top: 200px;
-    width: 1920px;
+    align-items: center;
 }
 
 .main__content h1 {
@@ -337,6 +337,7 @@ a.button, a.navbar__links {
 }
 
 .main__content h2 {
+    width: fit-content;
     font-size: 6rem;
     background-color: #fff;
     background-size: 100%;
@@ -354,9 +355,17 @@ a.button, a.navbar__links {
     color: #fff;
 }
 
+.button__container {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
 
 .main__btn {
     /* opacity: 0%; */
+    
     font-size: 1rem;
     padding: 14px 32px;
     border-style: dashed;
@@ -366,7 +375,6 @@ a.button, a.navbar__links {
     cursor: pointer;
     position: relative;
     transition: all 0.35s;
-    margin-left: 37%;
 }
 
 .main__btn a {
@@ -402,6 +410,7 @@ a.button, a.navbar__links {
 }
 
 .phone__btn {
+    width: max-content;
     font-size: 1rem;
     padding: 14px 20px;
     border-top:none;
@@ -431,8 +440,8 @@ a.button, a.navbar__links {
 }
 
 #main__img {
-    height: 100%;
-    width: 100%;
+    transform: scale(3);
+    
 }
 
 /* Mobile Responsive*/
@@ -447,10 +456,17 @@ a.button, a.navbar__links {
         margin: 0 auto;
         height: 80vh;
     }
+
+    .button__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
   
     .main__content {
     width: 700px;
-      text-align: center;
+      text-align: baseline;
       margin-bottom: 4rem;
       margin-left: auto;
       margin-right: auto;
@@ -476,7 +492,7 @@ a.button, a.navbar__links {
       }
   
     .phone__btn{
-        margin-top: -10px;
+        margin-top: -4px;
     }
 }
 @media screen and (max-width: 760px) {
@@ -518,9 +534,7 @@ a.button, a.navbar__links {
         margin: 2.5rem 0;
       }
   
-    .phone__btn{
-        margin-top: -10px;
-    }
+    
    
   }
 
@@ -563,9 +577,7 @@ a.button, a.navbar__links {
         margin: 2.5rem 0;
       }
   
-    .phone__btn{
-        margin-top: -10px;
-    }
+    
   }
   @media screen and (max-width: 480px) {
     .main__container img {
@@ -574,8 +586,7 @@ a.button, a.navbar__links {
     }
 
     .main__content {
-        margin-left: auto;
-        margin-right: auto;
+        
         align-items: start;
         margin-top: 100px;
         width: 300px;
@@ -583,8 +594,7 @@ a.button, a.navbar__links {
     .main__content h1 {
       font-size: 1rem;
       margin-top: 1rem;
-      padding-left: 1%;
-      margin-left: 15px;
+      
     }
   
     .main__content h2 {
@@ -598,11 +608,7 @@ a.button, a.navbar__links {
   
     .main__btn {
       padding: 12px 50px;
-      margin: 2.5rem 0;
-    }
-
-    .phone__btn{
-        margin-top: -10px;
+      
     }
   }
 
