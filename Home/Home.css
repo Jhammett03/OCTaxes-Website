@@ -145,6 +145,11 @@ a.button, a.navbar__links {
     color: #fff;
 }
 
+.main__container img {
+    scale: 80%;
+    height: 100vh;
+}
+
 .button:hover {
     background: #64e727;
     transition: all 0.3s ease;
@@ -160,6 +165,12 @@ a.button, a.navbar__links {
 
 
 @media screen and (max-width: 960px) {
+
+    .main__container img {
+        scale: 80%;
+        height: 100vh;
+    }
+
     .navbar__container {
         display: flex;
         justify-content: space-between;
@@ -301,19 +312,17 @@ a.button, a.navbar__links {
 }
 
 .main__container {
+    margin: auto;
     display: flex;
     flex-direction: column;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    /* justify-self: baseline; */
-    margin: auto auto;
+    justify-content: center;
+    /* margin: auto auto; */
     height: 80vh;
     width: 100vh;
     position: relative;
     object-fit: cover;
     background-size: 1920px;
-    width: fit-content;
-    max-width: 1920px;
+    width: max-content;
     padding: 0 50px;
     transform-style: preserve-3d;
     z-index: -1;
@@ -321,7 +330,7 @@ a.button, a.navbar__links {
 
 .main__content {
     margin-top: 200px;
-    align-items: center;
+    justify-content: center;
 }
 
 .main__content h1 {
@@ -338,6 +347,8 @@ a.button, a.navbar__links {
 
 .main__content h2 {
     width: fit-content;
+    justify-content: center;
+    margin-left: auto;
     font-size: 6rem;
     background-color: #fff;
     background-size: 100%;
@@ -448,7 +459,7 @@ a.button, a.navbar__links {
 
 @media screen and (max-width: 1300px) {
     .main__container {
-        display: grid;
+        display: flex;
         grid-template-columns: auto;
         align-items: center;
         justify-self: center;
@@ -497,13 +508,18 @@ a.button, a.navbar__links {
 }
 @media screen and (max-width: 760px) {
     .main__container {
-        display: grid;
+        display: flex;
         grid-template-columns: auto;
         align-items: center;
         justify-self: center;
         width: 100%;
         margin: auto;
         height: 80vh;
+    }
+
+    .main__container img {
+        scale: 90%;
+        height: 100vh;
     }
   
     .main__content {
@@ -540,13 +556,17 @@ a.button, a.navbar__links {
 
   @media screen and (max-width: 560px) {
     .main__container {
-        display: grid;
-        grid-template-columns: auto;
+        display: flex;
         align-items: center;
         justify-self: center;
         width: 100%;
         margin: auto;
         height: 80vh;
+    }
+
+    .main__container img {
+        scale: 80%;
+        height: 100vh;
     }
   
     .main__content {
