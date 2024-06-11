@@ -93,9 +93,6 @@ b {
     width: 500px;
 }
 
-
-
-
 .navbar__menu {
     float: right;
     /* margin-left: 2rem; */
@@ -588,17 +585,13 @@ a.button, a.navbar__links {
     }
   }
   @media screen and (max-width: 480px) {
-    .main__container img {
-        scale: 80%;
-        height: 100vh;
-    }
 
     .main__content {
         margin-left: auto;
         margin-right: auto;
         align-items: start;
         margin-top: 100px;
-        width: 300px;
+        width: fit-content;
     }
     .main__content h1 {
       font-size: 1rem;
@@ -628,15 +621,17 @@ a.button, a.navbar__links {
 
 /* Services Section Css */
 .services__text {
+    height: fit-content;
     padding: 30px;
   width: auto;
 }
 .services {
-    margin: -300px 0px auto auto;
+    display: flex;
+    margin: -320px 0px auto auto;
     z-index: -1;
     display: flex;
     width:auto;
-    height: auto;
+    height: fit-content;
     align-items: center;
     justify-content: center; /* Center horizontally */
     flex-direction: column; /* Stack items vertically */
@@ -734,7 +729,7 @@ img {
 }
 .services__container {
     display: flex;
-    justify-content:;
+    justify-content:center;
     flex-direction:row;
     flex-wrap:wrap; 
 }
@@ -836,13 +831,13 @@ img {
 
 @media screen and (max-width: 1300px) {
     .services__container {
-        height: 250px;
+        height: fit-content;
     }
 
     .services__text {
-        width: 300px;
-        margin-left: 10%;
-        margin: 5px;
+        height: fit-content;
+        width: fit-content;
+        margin: auto;
     }
     .services__text h1 {
         margin-top: 50px;
@@ -871,11 +866,11 @@ img {
     
 @media screen and (max-width: 900px) {
     .services__container {
-        height: 210px;
+        height: fit-content;
     }
 
     .services__text {
-        width: 300px;
+        width: fit-content;
         margin-left: 10%;
         margin: 5px;
     }
@@ -909,11 +904,11 @@ img {
 
 @media screen and (max-width: 700px) {
     .services__container {
-        height: 200px;
+        height: fit-content;
     }
 
     .services__text {
-        width: 200px;
+        width: fit-content;
         margin-left: 5%;
         margin: 5px;
     }
@@ -948,11 +943,11 @@ img {
         margin-left: auto;
         margin-right: auto;
         flex-direction: column;
-        height: 300px;
+        height: fit-content;
     }
 
     .services__text {
-        width: 200px;
+        width: fit-content;
         height: max-content;
         margin-left: auto;
         margin-right: auto;
@@ -992,7 +987,7 @@ img {
 
 @media screen and (max-width: 330px) {
     .services__container {
-        height: 400px;
+        height: fit-content;
     }
 }
 
@@ -1037,11 +1032,12 @@ img {
 
 
 .contact__wrapper {
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 500px;
+    justify-content: center;
+    gap: 10%;
 }
 .phone, .email, .fax {
     cursor: pointer;
@@ -1052,6 +1048,7 @@ img {
 }
 
 #copywrite__tag {
+    color: #111;
     text-align: center;
     margin-top: 50px;
     margin-left: auto;
@@ -1063,7 +1060,7 @@ img {
     .contact__wrapper {
         display: flex;
         justify-content: center;
-        gap: 200px;
+        /* gap: 200px; */
     }
 
     #copywrite__tag {
@@ -1078,7 +1075,7 @@ img {
     .contact__wrapper {
         display: flex;
         justify-content: center;
-        gap: 100px;
+        /* gap: 100px; */
     }
 
     #copywrite__tag {
@@ -1091,11 +1088,11 @@ img {
 
 @media screen and (max-width: 1000px) {
     .contact__wrapper {
-        margin-top: 50px;
+        margin-top: 10px;
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
-        gap: 150px;
+        /* gap: 150px; */
     }
 
     #copywrite__tag {
@@ -1106,7 +1103,7 @@ img {
     
 
     .phone, .email, .fax {
-        scale: 150%;
+        scale: 90%;
     }
 
     
@@ -1114,12 +1111,11 @@ img {
 
 @media screen and (max-width: 470px) {
     .contact__wrapper {
-        margin-top: 20px;
-        gap: 50px;
+        margin-top: 10px;
     }
     .phone, .email, .fax {
         
-        scale: 100%;
+        scale: 80%;
     }
 }
 
