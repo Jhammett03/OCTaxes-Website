@@ -1089,7 +1089,7 @@ img {
     
 
     .phone, .email, .fax {
-        scale: 90%;
+        scale: 150%;
     }
 
     
@@ -1102,7 +1102,7 @@ img {
     }
     .phone, .email, .fax {
         
-        scale: 80%;
+        scale: 100%;
     }
 }
 
