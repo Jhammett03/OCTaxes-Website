@@ -1068,21 +1068,6 @@ hr {
 
 @media screen and (max-width: 1000px) {
     .contact__wrapper {
-        display: flex;
-        justify-content: center;
-        gap: 100px;
-    }
-
-    #copywrite__tag {
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-}
-
-@media screen and (max-width: 1000px) {
-    .contact__wrapper {
         margin-top: 50px;
         display: flex;
         flex-direction: column;

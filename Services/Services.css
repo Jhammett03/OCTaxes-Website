@@ -191,7 +191,7 @@ a.button, a.navbar__links {
         margin-left: 0px;
         position: absolute;
         padding: none;
-        background-color: rgba(168, 165, 165, 0.5);
+        background: rgba(168, 165, 165, .9);
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -1003,7 +1003,6 @@ img {
 
 /* Footer CSS */
 .footer__container {
-    width: 100%;
     background-color: #ffffff;
     padding: 2rem 0;
     display: flex;
@@ -1035,12 +1034,11 @@ img {
 
 
 .contact__wrapper {
-    margin-top: 10px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 10%;
+    gap: 500px;
 }
 .phone, .email, .fax {
     cursor: pointer;
@@ -1063,7 +1061,7 @@ img {
     .contact__wrapper {
         display: flex;
         justify-content: center;
-        /* gap: 200px; */
+        gap: 200px;
     }
 
     #copywrite__tag {
@@ -1115,6 +1113,7 @@ img {
 @media screen and (max-width: 470px) {
     .contact__wrapper {
         margin-top: 10px;
+        gap: 20px;
     }
     .phone, .email, .fax {
         
