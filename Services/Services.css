@@ -191,7 +191,7 @@ a.button, a.navbar__links {
         margin-left: 0px;
         position: absolute;
         padding: none;
-        background: rgba(168, 165, 165, .9);
+        background-color: rgba(168, 165, 165, 0.5);
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -623,6 +623,7 @@ a.button, a.navbar__links {
 
 /* Services Section Css */
 .services__text {
+    z-index: 1;
     height: fit-content;
     padding: 30px;
   width: auto;

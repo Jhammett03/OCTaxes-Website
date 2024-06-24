@@ -22,6 +22,7 @@ html {
     font-size: 1.5rem;
     position: sticky;
     top: 0;
+    z-index: 1000000000;
 
 }
 
@@ -192,11 +193,11 @@ a.button, a.navbar__links {
         margin-left: 0px;
         position: absolute;
         padding: none;
-        background: rgba(168, 165, 165, .9);
+        background-color: rgba(168, 165, 165, 0.5);
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
-        z-index: 99;
+        z-index: 999999999999;
         height: 50vh;
         font-size: 1.6rem;
     }
@@ -250,7 +251,7 @@ a.button, a.navbar__links {
         top: 20%;
         right: 5%;
         transform: translate(5%, 20%);
-        z-index: ;
+        z-index: 10000;
       }
 
     .navbar__toggle .bar{
@@ -290,7 +291,7 @@ a.button, a.navbar__links {
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 5px;
-    z-index: -10000;
+    z-index: 10000;
 }
 
 .background {
@@ -608,6 +609,7 @@ a.button, a.navbar__links {
 
 /* Services Section Css */
 .services__text {
+    z-index: -1;
     padding: 30px;
   width: auto;
 }
@@ -627,7 +629,7 @@ a.button, a.navbar__links {
     width: 100%;
     height: fit-content;
     margin-top: 215px;
-    z-index: 50;
+    z-index: 1;
 }
 
 hr {
