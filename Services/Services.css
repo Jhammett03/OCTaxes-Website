@@ -283,8 +283,6 @@ a.button, a.navbar__links {
 .wrapper {
     background-color: #fff;
     height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
     perspective: 5px;
 }
 
@@ -295,7 +293,7 @@ a.button, a.navbar__links {
     object-fit: cover;
     z-index: 0;
     transform: translateZ(-10px)  scale(4) translateY(-120px);
-    overflow: hidden;
+    
 }
 
 
