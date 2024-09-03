@@ -272,7 +272,7 @@ a.button, a.navbar__links {
 .main {
     z-index: -1;
     width: 100%;
-    height: 60%;
+    height: 10%;
     background-image: url(home.jpg);
 
 }
@@ -290,30 +290,11 @@ a.button, a.navbar__links {
 
 .background {
     position: absolute;
-    height: 70%;
+    height: 50%;
     width : 100%;
     object-fit: cover;
     z-index: 0;
-    transform: translateZ(-10px)  scale(4);
-    overflow: hidden;
-}
-
-.background2 {
-    position: absolute;
-    height: 80%;
-    width: 130%;
-    object-fit: cover;
-    z-index: -2;
-    transform: translate(0, 89vh) translateZ(-5px) scale(2);
-    overflow: hidden;
-}
-.background3 {
-    position: absolute;
-    height: 80%;
-    width: 130%;
-    object-fit: cover;
-    z-index: -3;
-    transform: translate(0, 150vh) translateZ(-5px) scale(2);
+    transform: translateZ(-10px)  scale(4) translateY(-120px);
     overflow: hidden;
 }
 
@@ -631,16 +612,17 @@ a.button, a.navbar__links {
     z-index: -1;
     display: flex;
     width:auto;
-    height: fit-content;
+    height:min-content
     align-items: center;
     justify-content: center; /* Center horizontally */
     flex-direction: column; /* Stack items vertically */
 }
 
  .services__container {
+    display: block;
     background-color: #fff;
     width: 100%;
-    height: fit-content;
+    height: max-content;
     margin-top: 100px;
     z-index: 50;
 }
@@ -722,7 +704,7 @@ img {
 .vl {
     border-left: 6px solid #807e7e;
     margin-top: -170px;
-    height: 150px;
+    /* height: 150px; */
     margin-left: 510px;
     position: absolute;
     
