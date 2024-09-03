@@ -11,6 +11,7 @@ html {
     overflow: hidden !important;
     height: 100%;
     scroll-behavior: smooth !important;
+    overflow-y: scroll;
 }
 /* make every element scale with screen size */
 .navbar {
