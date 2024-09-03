@@ -292,7 +292,7 @@ a.button, a.navbar__links {
 
 .background {
     position: absolute;
-    height: 50%;
+    height: 60%;
     width : 100%;
     object-fit: cover;
     z-index: 0;
