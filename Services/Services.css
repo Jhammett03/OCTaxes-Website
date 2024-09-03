@@ -9,6 +9,7 @@
 
 html {
     scroll-behavior: smooth !important;
+    overflow-y: scroll;
 }
 /* make every element scale with screen size */
 .navbar {
