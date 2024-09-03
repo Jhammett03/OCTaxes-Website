@@ -8,6 +8,8 @@
 }
 
 html {
+    overflow: hidden !important;
+    height: 100%;
     scroll-behavior: smooth !important;
 }
 /* make every element scale with screen size */
@@ -20,7 +22,7 @@ html {
     font-size: 1.5rem;
     position: sticky;
     top: 0;
-    z-index: 10000;
+    z-index: 1000000000;
 
 }
 
@@ -37,7 +39,7 @@ html {
     margin-right: 1vw;
     margin-left: 52px;
     padding-right: 100px;
-    padding-left: 0px;
+    padding-left: 0px;  
 }
 
 #logo_h1 {
@@ -164,7 +166,6 @@ a.button, a.navbar__links {
         display: flex;
         justify-content: space-between;
         height: 80px;
-        z-index: 1;
         width: 100%;
         max-width: 1300px;
         padding: none;
@@ -183,7 +184,7 @@ a.button, a.navbar__links {
         opacity: 1;
         transition: all 0.5s ease;
         height: 50vh;
-        z-index: -1;
+        z-index: 1000;
     }
 
     .navbar__menu.active {
@@ -192,11 +193,11 @@ a.button, a.navbar__links {
         margin-left: 0px;
         position: absolute;
         padding: none;
-        background: rgba(168, 165, 165, .9);
+        background-color: rgba(168, 165, 165, 0.5);
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
-        z-index: 99;
+        z-index: 999999999999;
         height: 50vh;
         font-size: 1.6rem;
     }
@@ -250,6 +251,7 @@ a.button, a.navbar__links {
         top: 20%;
         right: 5%;
         transform: translate(5%, 20%);
+        z-index: 10000;
       }
 
     .navbar__toggle .bar{
@@ -273,7 +275,7 @@ a.button, a.navbar__links {
 
 /* Hero Section CSS */
 .main {
-    z-index: -1;
+    z-index: -1000;
     width: 100%;
     height: 60%;
     background-image: url(home.jpg);
@@ -289,6 +291,7 @@ a.button, a.navbar__links {
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 5px;
+    z-index: 10000;
 }
 
 .background {
@@ -296,7 +299,7 @@ a.button, a.navbar__links {
     height: 100%;
     width : 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: -10000;
     transform: translateZ(-10px)  scale(4);
     overflow: hidden;
 }
@@ -316,7 +319,7 @@ a.button, a.navbar__links {
     max-width: 1920px;
     padding: 0 50px;
     transform-style: preserve-3d;
-    z-index: -1;
+    z-index: -1000;
 }
 
 .main__content {
@@ -606,6 +609,7 @@ a.button, a.navbar__links {
 
 /* Services Section Css */
 .services__text {
+    z-index: -1;
     padding: 30px;
   width: auto;
 }
@@ -625,7 +629,7 @@ a.button, a.navbar__links {
     width: 100%;
     height: fit-content;
     margin-top: 215px;
-    z-index: 50;
+    z-index: 1;
 }
 
 hr {
@@ -687,7 +691,7 @@ img {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    text-align: center; */
+    text-align: center; 
 }
 
 .services h3{
@@ -753,7 +757,8 @@ img {
     word-spacing: 10px;
     font-size: 3rem;
     margin-top: 10px;
-    left: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .services__card p {
     position:absolute;
@@ -827,9 +832,14 @@ img {
     }
     
     .services h2{
-        left: 0%;
         width: fit-content;
         font-size: 30px;
+        text-align: center; 
+    }
+
+    hr {
+        margin: 50px auto;
+        border-top: 5px solid #555454;
     }
     
     .services h3{
@@ -863,10 +873,10 @@ img {
     }
     
     .services h2{
-        left: 0%;
         margin-top: -8px;
         width: fit-content;
         font-size: 20px;
+        text-align: center; 
     }
     
     .services h3{
@@ -900,9 +910,9 @@ img {
     }
     
     .services h2{
-        left: 0%;
         width: fit-content;
         font-size: 20px;
+        text-align: center; 
     }
     
     .services h3{
@@ -935,18 +945,16 @@ img {
     }
     .services__text h1 {
         margin-top: 50px;
-        left: 0%;
-        font-size: 10px;
+        font-size: 15px;
     }
     
     .services h2{
-        left: 0%;
         width: fit-content;
         font-size: 20px;
+        text-align: center; 
     }
     
     .services h3{
-        left: 0%;
         display: flex;
         text-align: center;
         word-wrap: break-word;
@@ -1053,6 +1061,8 @@ img {
     .contact__wrapper {
         display: flex;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
         gap: 100px;
     }
 
@@ -1061,24 +1071,6 @@ img {
         margin-left: auto;
         margin-right: auto;
     }
-    
-}
-
-@media screen and (max-width: 1000px) {
-    .contact__wrapper {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 150px;
-    }
-
-    #copywrite__tag {
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
 
     .phone, .email, .fax {
         scale: 150%;

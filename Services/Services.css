@@ -8,6 +8,8 @@
 }
 
 html {
+    overflow: hidden !important;
+    height: 100%;
     scroll-behavior: smooth !important;
 }
 /* make every element scale with screen size */
@@ -621,6 +623,7 @@ a.button, a.navbar__links {
 
 /* Services Section Css */
 .services__text {
+    z-index: 1;
     height: fit-content;
     padding: 30px;
   width: auto;
@@ -1000,7 +1003,6 @@ img {
 
 /* Footer CSS */
 .footer__container {
-    width: 100%;
     background-color: #ffffff;
     padding: 2rem 0;
     display: flex;
@@ -1032,12 +1034,11 @@ img {
 
 
 .contact__wrapper {
-    margin-top: 10px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 10%;
+    gap: 500px;
 }
 .phone, .email, .fax {
     cursor: pointer;
@@ -1058,9 +1059,10 @@ img {
 
 @media screen and (max-width: 1700px) {
     .contact__wrapper {
+        justify-content: center;
         display: flex;
         justify-content: center;
-        /* gap: 200px; */
+        gap: 200px;
     }
 
     #copywrite__tag {
@@ -1073,26 +1075,12 @@ img {
 
 @media screen and (max-width: 1000px) {
     .contact__wrapper {
-        display: flex;
         justify-content: center;
-        /* gap: 100px; */
-    }
-
-    #copywrite__tag {
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-}
-
-@media screen and (max-width: 1000px) {
-    .contact__wrapper {
         margin-top: 10px;
         display: flex;
-        /* flex-direction: column; */
+        flex-direction: column;
         align-items: center;
-        /* gap: 150px; */
+        gap: 100px;
     }
 
     #copywrite__tag {
@@ -1103,7 +1091,7 @@ img {
     
 
     .phone, .email, .fax {
-        scale: 90%;
+        scale: 100%;
     }
 
     
@@ -1112,10 +1100,11 @@ img {
 @media screen and (max-width: 470px) {
     .contact__wrapper {
         margin-top: 10px;
+        gap: 50px;
     }
     .phone, .email, .fax {
         
-        scale: 80%;
+        scale: 100%;
     }
 }
 
